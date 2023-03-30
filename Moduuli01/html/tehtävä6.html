@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Program</title>
+    <script src="../javascript/tehtävä6.js" defer></script>
+</head>
+<body>
+<script>
+    'use strict';
+    if (confirm("Should I calculate the square root?") == true) {
+      const number = prompt('Enter a number.');
+        if (number < 0) {
+            document.write("The square root of a negative number is not defined.")
+    } else {
+          document.write(Math.sqrt(number))
+        }
+    } else {
+      document.write("The square root is not calculated.")
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Program</title>
+    <script src="../javascript/tehtävä5.js" defer></script>
+</head>
+<body>
+<script>
+    'use strict';
+    const year = prompt('Enter a year.');
+    if (year % 4 == 0) {
+        if (year % 100 == 0 && year % 400 != 0) {
+            document.write('The year is not a leap year.')
+        } else {
+            document.write('The year is a leap year.')
+        }
+    } else {
+        document.write('The year is not a leap year.')
+    }
+</script>
+</body>
+</html>
