@@ -2,23 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Program</title>
+    <title>Tehtävä 4</title>
     <script src="../javascript/tehtävä4.js" defer></script>
 </head>
 <body>
-<script>
-    'use strict';
-    const nimi = prompt("Anna nimesi.");
-    const number = Math.floor(Math.random() * 4 + 1);
-    if (number < 2) {
-        document.write(nimi + ', you are Gryffindor!')
-    } else if (number > 3) {
-        document.write(nimi + ', you are Ravenclaw!')
-    } else if (number > 2 && number < 4) {
-        document.write(nimi + ', you are Hufflepuff!')
-    } else {
-        document.write(nimi + ', you are Slytherin!')
-    }
-</script>
+    <h1>The result:</h1>
+    <p id="result"></p>
+    <p id="result2"></p>
+    <p id="result3"></p>
+    <p id="result4"></p>
 </body>
 </html>
