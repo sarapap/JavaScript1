@@ -1,15 +1,20 @@
 'use script';
-const integers = []
-jakaja = 1
-const number = prompt('Enter an integer.')
+const number = prompt('Enter an integer.');
+let isPrime = true;
 
-while (jakaja <= number) {
-  if (number % jakaja == 0) {
-    integers.push(jakaja)
-  jakaja = jakaja + 1
+if (number == 1) {
+  document.querySelector('#result').innerHTML = '1 is not a prime number.';
+} else if (number > 1) {
+  for (let i = 2; i < number; i++) {
+    if (number % i == 0) {
+      isPrime = false
+      break;
+    }
+  } if (isPrime) {
+    document.querySelector('#result2').innerHTML = number + ' is a prime number.';
+  } else {
+    document.querySelector('#result3').innerHTML = number + ' is a not a prime number.';
   }
-} if (integers[0] == 1 && integers[1] == number) {
-    document.querySelector('#result').innerHTML = 'The integer you entered is a prime number.'
 } else {
-  document.querySelector('#result2').innerHTML = 'The integer you entered is not a prime number.'
+  document.querySelector('#result4').innerHTML = number + ' is not a prime number.';
 }
