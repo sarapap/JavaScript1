@@ -20,7 +20,7 @@ form.addEventListener('submit', async function(evt) {
         article.appendChild(article_heading);
 
         const link = document.createElement('a');
-        link.textContent = show['show']['url'];
+        link.innerText = show['show']['url'];
         link.target = '_blank';
         article.appendChild(link)
 
@@ -32,7 +32,7 @@ form.addEventListener('submit', async function(evt) {
         article.appendChild(figure);
 
         let summary = document.createElement('div');
-        summary.textContent = show['show']['summary'];
+        summary.innerHTML = show['show']['summary'];
         article.appendChild(summary);
 
         result.appendChild(article)
